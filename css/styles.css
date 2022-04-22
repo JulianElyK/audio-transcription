@@ -24,6 +24,13 @@ header {
   padding: 1.25% 0 0 2.5%;
 }
 
+.real-time-interface__group-button {
+  display: flex;
+  justify-items: left;
+  align-items: center;
+  flex-direction: row;
+}
+
 .real-time-interface__button {
   display: flex;
   padding: .5em;
@@ -32,8 +39,9 @@ header {
   cursor: pointer;
   background: #6b2bd6;
   color: white;
-  width: 5%;
+  width: fit-content;
   font-size: 18px;
+  margin: 1em 1em 1em 0;
 }
 
 .real-time-interface__title {
@@ -51,4 +59,29 @@ header {
   box-shadow: 0 0 32px 0 rgb(0 0 0 / 16%);
   padding: 1em;
   transition: .5s ease-in;
+}
+
+.status-message {
+  padding: 0.5rem;
+  font-weight: 800;
+  font-size: larger;
+  width: fit-content;
+  height: fit-content;
+  transition: .5s linear;
+}
+
+button:disabled {
+  background-color: darkgrey;
+  cursor: default;
+}
+
+.summary-chapter {
+  margin-bottom: 2rem;
+}
+.summary {
+  font-size: 15px;
+}
+.summary-box title {
+  font-size: 18px;
+  font-weight: 500;
 }
